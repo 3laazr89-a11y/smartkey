@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">#FF0F766E</item>
+        <item name="android:colorPrimaryDark">#FF0B1F1E</item>
+        <item name="android:colorAccent">#FF0F766E</item>
+        <item name="android:statusBarColor">#FF0B1F1E</item>
+        <item name="android:windowBackground">@color/bg</item>
+    </style>
+    <style name="EmojiSearchOverlay" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <color name="bg">#FFF4F1EA</color>
+    <color name="icon_bg">#FF0F766E</color>
+</resources>
