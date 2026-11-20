@@ -81,7 +81,9 @@ class SettingsActivity : Activity() {
             ).apply { cornerRadius = dp(22).toFloat() }
         }
         hero.addView(label("لوحة ذكية", 0xFFF4F1EA.toInt(), 28f, true))
-        hero.addView(label("لوحة مفاتيح تتعلم من كتابتك ونسخك ولصقك، مع حافظة تتسع لـ 3000 نص وثيمات متعددة.", 0xCCF4F1EA.toInt(), 14f).apply { setPadding(0, dp(6), 0, 0) })
+        hero.addView(label("لوحة مفاتيح تتعلم من كتابتك ونسخك ولصقك، مع حافظة تتسع لـ 3000 نص وثيمات متعددة.", 0xCCF4F1EA.toInt(), 14f).apply {
+            setPadding(0, dp(8), 0, 0)
+        })
         root.addView(hero)
 
         // Setup
@@ -207,6 +209,13 @@ class SettingsActivity : Activity() {
 
         root.addView(label("تعمل الحافظة عندما تكون «لوحة ذكية» هي لوحة المفاتيح الحالية. البيانات تبقى على جهازك فقط.", muted, 12f).apply {
             setPadding(dp(4), dp(18), dp(4), 0)
+        })
+
+        // About
+        section("حول التطبيق")
+        val about = cardBox()
+        about.addView(label("اسم المطور: علاء", ink, 16f, true).apply {
+            setPadding(0, dp(8), 0, dp(8))
         })
     }
 
